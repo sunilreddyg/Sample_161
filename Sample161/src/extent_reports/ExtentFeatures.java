@@ -10,12 +10,12 @@ public class ExtentFeatures
 	public static void main(String[] args) {
 	
 		
-		String filepath="C:\\Users\\Administrator\\git\\21st_Jan_6PM\\SBI_Insurance\\src\\Reports\\\\Details.html";
+		String filepath="C:\\Users\\Administrator\\git\\21st_Jan_6PM\\SBI_Insurance\\src\\Reports\\MyReports.html";
 		ExtentReports reports=new ExtentReports(filepath, true);
 		
 		ExtentTest test=reports.startTest("Test Login", "Login with invalid data")
 				.assignCategory("regression")
-				.assignAuthor("Sunil");
+				.assignAuthor("Rajesh");
 		
 		test.log(LogStatus.INFO, "Login Successfull");
 		reports.endTest(test);
